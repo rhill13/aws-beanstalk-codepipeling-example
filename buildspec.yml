@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Entered build phase...
+      - echo Build started on `date`
+      - docker-compose up -d
+  post_build:
+    commands:
+      - echo Build completed on `date`
